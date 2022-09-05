@@ -5,6 +5,7 @@ function menu(){
     const burguer =document.getElementById('hamburguer')
     nav.classList.toggle('active')
     burguer.classList.toggle('active')
+    
 }
 
 botao.addEventListener('click',menu)

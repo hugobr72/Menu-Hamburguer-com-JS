@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: #111;
 }
 a{
     color: #000;
@@ -16,6 +17,10 @@ a:hover{
 #logo{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.fa-bars{
+    display: none;
 }
 
 #header{
@@ -47,43 +52,31 @@ a:hover{
     #btn-mobile{
         padding-bottom: 16px;
         display: block;
-        height: 17px;
-        width: 50px;
+        height: 65px;
+        width: 64px;
         border: none;
         background: none;
         cursor: pointer;
+        z-index: 100;
     }
 
     #hamburguer{
         position: absolute;
         right: 10px;
-        border-top: 2px solid;
-        width: 30px;
     }
 
-    #hamburguer::after, #hamburguer::before{
-        content: '';
-        display: block;
-        border-top: 2.4px solid;
-        width: 30px;
-        margin-top: -8px;
-        transition: 0.5s ease-in-out;
-    }
 
     #hamburguer.active{
         border: none;
     }
-    #hamburguer.active::after{
+
+    .fa-bars{
+        font-size: 22px;
+        right: 8px;
+        top: 25px;
         position: absolute;
-        transform: rotate(405deg);
-        top: 27px;
+        display: block;
     }
-
-    #hamburguer.active::before{
-        margin-top: 20px;
-        transform: rotate(-405deg);
-    }
-
 
 
     #menu{
