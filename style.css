@@ -76,6 +76,25 @@ a:hover{
         top: 25px;
         position: absolute;
         display: block;
+        transition: 0.5s ease-in-out;
+    }
+    .fa-bars.active{
+        display: none;
+    }
+
+
+    .fa-xmark{
+        display: none;
+    }
+
+    .fa-xmark.active{
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        right: 8px;
+        top: 25px;
+        position: absolute;
+        transition: 0.5s ease-in-out;
     }
 
 
