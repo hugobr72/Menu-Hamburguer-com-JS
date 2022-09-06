@@ -90,7 +90,7 @@ a:hover{
     .fa-xmark.active{
         display: block;
         position: absolute;
-        font-size: 24px;
+        font-size: 28px;
         right: 8px;
         top: 24px;
         position: absolute;
