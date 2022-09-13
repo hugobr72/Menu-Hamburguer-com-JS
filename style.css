@@ -76,25 +76,26 @@ a:hover{
         top: 25px;
         position: absolute;
         display: block;
-        transition: 0.5s ease-in-out;
     }
     .fa-bars.active{
-        display: none;
+        display: block;
+        opacity: 0;
     }
 
 
     .fa-xmark{
-        display: none;
+        display: block;
+        opacity: 0;
     }
 
     .fa-xmark.active{
-        display: block;
+        opacity: 1;
         position: absolute;
         font-size: 28px;
         right: 8px;
         top: 24px;
         position: absolute;
-        transition: 0.5s ease-in-out;
+        animation: giraX 0.4s ease-out;
     }
 
 
@@ -128,4 +129,14 @@ a:hover{
         visibility: visible;
         overflow-y: auto;
     }
+
+@keyframes giraX {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
 }
